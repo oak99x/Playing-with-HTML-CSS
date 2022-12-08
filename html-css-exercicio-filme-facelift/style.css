@@ -1,0 +1,82 @@
+body {
+    margin: 50px 80px 20px 80px;
+    background: black;
+    color: white;
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.imagem-fundo{
+    background-image: linear-gradient(rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.6)), url("https://miro.medium.com/max/1400/1*z7MmGyyGZuHRtiVOgjKvWQ.jpeg");
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: 100% 38%;
+    
+}
+
+.imagem-capa{
+    width: 240px;
+    height: 300px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0,1);
+}
+
+.caixa-info {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    width: 240px;
+    padding: 1px 10px 20px 10px;
+    margin-top: 15px;
+}
+
+.texto-info h3, span{
+    display: block;
+    color: white;
+    font-family: serif;
+}
+
+.box-titulo-sinopse{
+    position: relative;
+    top: -560px;
+    left: 280px;
+    width: 900px;
+    font-family: serif;
+}
+
+.box-titulo{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;   
+}
+
+.box-sinopse{
+    text-align: justify;
+}
+
+.box-sinopse h3{
+    font-size: 24px;
+}
+
+.box-sinopse p{
+    font-size: 18px;
+}
+
+.box-elenco{
+    position: relative;
+    top: -460px;
+    left: 280px;
+    width: 900px;
+} 
+
+.box-trailer{
+    position: relative;
+    top: -400px;
+}
+
+a{
+    color: rgb(184, 124, 45);
+}

@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d5d6d6;
+    margin: 0px;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    width: 1280px;
+    max-width: 100%;
+    height: 720px;
+    max-height: 100%;
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+}
+
+.box-lateral-esquerda{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 30%;
+    background: white;
+}
+
+.box-lateral-direita{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 70%;
+    padding: 5% 10% 5% 10%;
+    background: rgb(248, 249, 251);
+    align-items: center;
+    border-bottom: solid rgb(74, 223, 131);
+    border-width: 8px;
+}
+
+.fundo{
+    position:relative;
+    align-items:center;
+}
+
+.fundo img{
+    width: 350px;
+    height: 340px;
+    object-fit: fill;
+}
+
+.box-texto{
+    text-align:center;
+    color: rgb(27, 27, 27);
+}
+
+.box-texto h2{
+    font-size:35px;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+.box-texto p{
+    font-size:16px;
+    font-weight: lighter;
+    margin: 10px;
+    vertical-align:middle;
+}
+
+hr{
+    position: relative;     
+    border: none;
+    height: 1px;
+    background: rgb(230, 230, 230);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.icon-laptop{
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+    vertical-align:middle;
+}
+
+a{
+    color: rgba(73, 209, 125, 0.918);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: rgb(237, 237, 237);
+    padding: 0 15px 0;
+}
+
+.user-img{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-icons{
+    display: flex;
+}
+
+.nav-icons li{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    color: black;
+    font-size: 27px;
+    margin-left: 20px;
+}
+
+.chat-list{
+    position: relative;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    background: white;
+}
+
+.box-chat{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:  10px 15px 10px 20px;
+    border-bottom: 1px solid rgb(237, 237, 237);
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.img-chat{
+    position: relative;
+    width: 58px;
+    height: 58px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.info-chat{
+    position: relative;
+    width: 100%;
+    margin-left: 15px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h4{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0px;
+    color: black;
+}
+
+.time{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px;
+    color: rgb(150, 150, 150);
+}
+.menssage p{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0px;
+    color: rgb(120, 120, 120);
+}

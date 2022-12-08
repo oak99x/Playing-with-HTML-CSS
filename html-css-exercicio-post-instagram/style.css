@@ -1,0 +1,133 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d9dbde;
+}
+
+.instagram-post {
+    min-width: 395px;
+    width: 395px;
+    height: 700px;
+    border: 10px solid #333;
+    border-radius: 30px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.header {
+    max-width: 100%;
+}
+
+.container{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    background: white;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 3px 15px 0px 15px;
+    margin: 0px;
+}
+
+.user-details{
+    display: flex;
+    align-items: center;
+}
+
+.user-details h3{
+    font-size: 13px;
+    color: black;
+    font-weight: 700;
+    line-height: 1em;  
+}
+
+.user-details  h3 span{
+    font-weight: lighter;
+    font-size: 11px;
+}
+
+.profine-img{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    transform: rotate(90deg);
+    cursor: pointer; 
+    margin-right: 4px;
+}
+
+.box-conteudo{
+    width: 100%;
+    flex-grow: 1;
+   margin-top: 5px;
+}
+
+.box-conteudo img{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.box-footer{
+    width: 100%;
+    padding: 15px 15px 15px 15px; 
+}
+
+.icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.left-icons img{
+    margin-right: 5px;
+}
+
+.likes{
+    font-size: 11px;
+    margin:  5px 0px  5px 0px;
+    padding: 0px;
+}

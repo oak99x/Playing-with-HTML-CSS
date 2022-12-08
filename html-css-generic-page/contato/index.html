@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../assets/css/common/style.css">
+        <link rel="stylesheet" href="../assets/css/common/header.css">
+        <link rel="stylesheet" href="../assets/css/common/footer.css"> 
+        <link rel="stylesheet" href="../assets/css/contact/contact.css">
+    </head>
+    <body>
+        <header class="header">
+            <section class="container header-container">
+                <a href="../index.html" class="logo">
+                    <!-- <img src="../assets/img/logos/LOGO.png" alt="logo LOREM IPSUM"> -->
+                </a>
+    
+                <input type="checkbox" id="menu-control" class="menu-control">
+                
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="../index.html" class="menu-item-link a-menu">Home</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../sobre/index.html" class="menu-item-link a-menu">Sobre nós</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../index.html" class="menu-item-link a-menu">Serviços</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./index.html" class="menu-item-link a-menu">Contato</a>
+                    </li>
+                </ul>
+                
+                <label class="mobile-menu" for="menu-control">
+                    <img src="../assets/img/icon/menu.png" alt="menu">
+                </label>
+
+            </section>
+        </header>
+
+        <section class="banner">
+            <img class="banner-image" src="../assets/img/banners/banner4.png" alt="banner-3">
+            <div class="banner-content">
+                <div class="container">  
+                        <h1 class="banner-title">Contato</h1>
+                        <p class="banner-text">
+                            Olá, somos a Lorem Ipsum. <br>
+                            Nosso trabalho é desenvolver textos de marcação.
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="contact-content">
+
+                    <div class="contact-box-left">
+                        <div class="contact-box-left-title">
+                            <h2>Envie-nos uma mensagem</h2>
+                            <img src="../assets/img/icon/icon-email2.png" alt="icon-email">
+                        </div>
+
+                        <div class="contact-box-left-content">
+                            <form class="contact-form" action="processa-dados" method="POST" onsubmit="enviardados()">
+                                    <div class="form">
+                                        <label class="form-label">
+                                            <h3 class="form-label-header">Nome</h3> 
+                                            <input class="form-label-box text-intern" type="text" placeholder="Ex.: José Maria da Silva">
+                                        </label>
+                                    </div>
+                                
+                                    <div class="form">
+                                        <label class="form-label">
+                                            <h3 class="form-label-header">Email</h3> 
+                                            <input class="form-label-box text-intern" type="email" required placeholder="Ex.: seuemail@email.com">
+                                        </label>
+                                    </div> 
+
+                                    <div class="form">
+                                        <label class="form-label">
+                                            <h3 class="form-label-header">Ramo em que atua</h3> 
+                                            <select class="form-label-box text-intern" name="ramos">
+                                                <option value="" selected disabled>Selecione...</option>
+                                                <option value="adm">Administracao</option>
+                                                <option value="fin">Financeiro</option>
+                                                <option value="rh">Recursos Humanos</option>
+                                                <option value="ti">Tecnologia da Informação</option>
+                                            </select>
+                                        </label>
+                                        
+                                    </div>  
+
+                                    <div class="form">
+                                        <label class="form-label">
+                                            <h3 class="form-label-header">Assunto</h3> 
+                                            <div class="form-box-assunto">
+                                                <label>
+                                                    <input type="radio" name="assunto">
+                                                    <span>Investimento</span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="assunto">
+                                                    <span>Contratação</span>
+                                                </label>
+                                            </div>
+                                        </label>
+                                    </div> 
+
+                                    <div class="form box-mensage">
+                                        <label class="form-label">
+                                            <h3 class="form-label-header">Mensagem</h3> 
+                                            <textarea class="form-label-box text-intern" nome="mensagem" rows="2" >Digite sua mensagem aqui</textarea>
+                                        </label>   
+                                    </div>  
+                                    
+                                    <div class="form-term-button">
+                                        <label class="box-term">
+                                            <input type="checkbox" nome="termos">
+                                            <span class="term-text">Li e concordo com a política de privacidade</span> 
+                                        </label>
+                                        
+                                        <div class="button-aling">
+                                            <button class="box-button" type="button">
+                                                <h2 class="button-text">Enviar</h2>
+                                                <img class="button-icon" src="../assets/img/icon/icons8-maior-que-30.png"/>
+                                            </button>
+                                        </div>
+                                        
+                                    </div>
+                            </form>
+                        </div> 
+                    </div>
+
+                    <div class="contact-box-right">
+                        
+                        <div class="contact-box-right-title">
+                            <h2>Informações de contato</h2>
+                        </div>
+                        <div class="contact-box-right-content">
+                            <div>
+                                <div class="box-icon-text">
+                                    <img src="../assets/img/icon/icon-map.png" alt="icon-map">
+                                    <p>Av. Theodomiro Porto da Fonseca, 3101 - Cristo Rei, São Leopoldo - RS, 93022-715</p>
+                                </div>
+                                <div class="box-icon-text">
+                                    <img src="../assets/img/icon/icon-phone.png" alt="icon-phone">
+                                    <p>(51) 3081-3600</p>
+                                </div>
+                                <div class="box-icon-text">
+                                    <img src="../assets/img/icon/icon-email.png" alt="icon-email">
+                                    <p>contato@loremipsungram.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fundo-roxo"></div> <!-- mobile -->
+                    
+                </div>
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            <section class="container ">
+                <div class="justify">
+                    <div class="footer-logos">
+                        <a href="../index.html" class="logo-footer">
+                            <img src="../assets/img/logos/LOGO.png" alt="logo LOREM IPSUM">
+                        </a>
+    
+                        <a href="https://crescer.cwi.com.br/" class="logo-crescer">
+                            <img src="../assets/img/logos/CRESCERLOGO.png" alt="logo cwi-crescer">
+                        </a>
+                    </div>
+            
+                    <div class="footer-box-menu">
+                        <ul class="footer-menu">
+                            <li class="menu-item">
+                                <a href="../index.html" class="footer-menu-item-link a-footer-menu">Home</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../sobre/index.html" class="footer-menu-item-link a-footer-menu">Sobre nós</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="../index.html" class="footer-menu-item-link a-footer-menu">Serviços</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="./index.html" class="footer-menu-item-link a-footer-menu">Contato</a>
+                            </li>
+                        </ul>
+    
+                        <h2 class="copyright">Copyright ©. Todos os direitos reservados à Lorem Ipsum.</h2>
+                        <h2 class="copyright2 copyright-aling">© Copyright 2019 Todos os direitos</h2>
+                    </div>
+                </div>
+                
+            </section>    
+        </footer>
+    </body>
+</html>

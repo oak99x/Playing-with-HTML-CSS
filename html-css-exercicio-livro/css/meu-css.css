@@ -1,0 +1,85 @@
+
+.texto-margin{
+    margin: 40px;
+}
+
+.paragrafo-espaco{
+    text-indent: 30px;
+}
+
+p:first-of-type:first-letter {
+    font-size: 3rem;
+    line-height: 2rem;
+    font-weight: bold;
+    float: left;
+    margin: 5px 4px;
+}
+
+p{
+    margin-block: 4px;
+    line-height: 21px
+}
+
+h3{
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+code {
+    padding: 2px 2px;
+    letter-spacing: -0.05px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius:4px;
+    color: white;
+    line-height: 1em;
+    font-weight: bold;
+    background: rgb(54, 54, 54);
+}
+
+u{
+    text-decoration: underline blue;
+    text-decoration-thickness: 12%;
+    text-underline-position: under;
+}
+
+.margin-ul{
+    margin: 45px;
+    margin-top: -10px;
+}
+
+.margin-ul2{
+    margin: 5px;
+    margin-left: -20px;
+    margin-top: 10px;
+}
+
+strong{
+    font-weight: 500;
+}
+
+.marcador-amarelo{
+    padding: 1px;
+    background: rgb(226, 255, 33);
+}
+
+.marcador-rosa{
+    padding: 1px;
+    background-image: linear-gradient(rgb(255, 107, 207), rgb(255, 157, 224), rgb(255, 107, 207));
+}
+
+.marcador-azul{
+    padding: 1px;
+    background-image: linear-gradient(rgb(97, 189, 255), rgb(164, 217, 255), rgb(97, 189, 255));
+}
+
+.marcador-verde{
+    padding: 1px;
+    background: rgb(97, 232, 67);
+    background-image: linear-gradient(rgb(97, 232, 67), rgb(179, 255, 162), rgb(97, 232, 67));
+}
+
+.marcador-laranja{
+    padding: 1px;
+    background-image: linear-gradient(rgb(255, 155, 44), rgb(255, 208, 154), rgb(255, 155, 44));
+}

@@ -1,0 +1,235 @@
+.banner{
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-image{
+    width: 100%;
+    filter: contrast(1);
+    filter: saturate(100%);
+    background-size: cover;
+}
+
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(81, 80, 112, 1);  
+}
+
+.banner-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner-title{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.banner-text{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 17px;
+}
+
+.team{
+    position: relative;
+    background: white
+}
+
+.team-content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden; 
+}
+
+.team-box{
+    width: 100%;
+}
+
+.team-title{
+    font-family: 'Montserrat', sans-serif;
+    color: #515070;
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+.team-text{
+    font-family: 'Montserrat', sans-serif;
+    color: #515070;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.team-box-photo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.photo-container{
+   position: relative; 
+}
+
+.photo-box-legend{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 98.5%;
+    opacity: 0;
+    transition: opacity 0.4s linear;
+}
+
+.photo-legend{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;  
+}
+
+.photo-legend h4{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.photo-legend p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 0px;
+}
+
+.photo-container:hover .photo-box-legend{
+    opacity: 0.7;
+    background: #515070;
+    visibility: visible;
+}
+
+.mvv{
+    position: relative;
+}
+  
+.mvv-content{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden; 
+}
+
+.mvv-box-item{
+    width: calc(100% / 3.3);
+}
+
+.item-image{
+    float: left;
+    margin-right: 25px;
+}
+
+.item-title{
+    font-family: 'Montserrat', sans-serif;
+    color: #515070;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.item-text{
+    font-family: 'Open Sans', sans-serif;
+    color: #898989;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 50px 0px;
+    padding: 0;
+}
+
+@media (max-width: 500px) 
+{
+    .banner-image{
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+    }
+
+    .team-content{
+        width: 100%;
+        height: auto;
+        display: block;
+        flex-wrap: nowrap;
+    }
+    
+    .team-box{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .team-box-photo{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .photo-container img{
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .photo-box-legend{
+        top: 10px;
+        height: 93%;
+    }
+
+    .mvv-content{
+        width: 100%;
+        height: auto;
+        display: block;
+        overflow: hidden; 
+        padding-top: 0px;
+    }
+    
+    .mvv-box-item{
+        display: block;
+        width: 100%;
+        margin-top: 90px;
+        margin-bottom: 70px;
+    }
+
+    .item-text{
+        font-size: 14px;
+        margin-top: 40px;
+        padding-right: 0;
+    }
+}
+
